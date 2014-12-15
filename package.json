@@ -1,0 +1,36 @@
+{
+  "name": "Fap Searches",
+  "version": "0.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "setup": "./setup.js",
+    "start": "./node_modules/nodemon/bin/nodemon.js -e js,md server",
+    "test": "./node_modules/lab/bin/lab -c",
+    "test-cover": "./node_modules/lab/bin/lab -c -r html -o ./test/artifacts/coverage.html && open ./test/artifacts/coverage.html"
+  },
+  "author": "Simon Maxwell-Stewart <smaxwellstewart@gmail.com> (http://smaxwellstewart.com/)",
+  "license": "MIT",
+  "dependencies": {
+    "ampersand-class-extend": "^1.0.0",
+    "async": "^0.9.0",
+    "boom": "^2.5.1",
+    "confidence": "^1.0.0",
+    "extend-object": "^1.0.0",
+    "hapi": "^7.0.0",
+    "hoek": "^2.4.1",
+    "joi": "^4.6.2",
+    "lout": "^5.0.1",
+    "mongodb": "^1.4.8",
+    "swig": "^1.4.2",
+    "visionary": "^1.0.0",
+    "wreck": "^5.0.1"
+  },
+  "devDependencies": {
+    "code": "^1.2.0",
+    "lab": "^5.0.1",
+    "nodemon": "^1.2.1",
+    "promptly": "^0.2.0",
+    "proxyquire": "^1.0.1"
+  }
+}
