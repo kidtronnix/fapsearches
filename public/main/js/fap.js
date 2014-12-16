@@ -104,7 +104,14 @@
           $('.perResults').html($.number(items.percent, 4));
         },
         warning: function() {
-            $('#myModal').modal('show');
+            if( localStorage.warning !== "accepted") {
+                $('#warningModal').modal('show');
+            }
+            
+            $('.warningClose').click(function(e) {
+                localStorage.setItem("warning", "accepted");
+            });
+            
         },
 
         //{point.percentage:.1f}
