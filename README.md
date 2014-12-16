@@ -6,7 +6,6 @@ This tool hopes to educate people in what and how people are searching for in th
 
  - [Simon Maxwell-Stewart](http://smaxwellstewart.com) - Creator/Lead Developer
  - [George Dallas](https://georgemdallas.wordpress.com/) - Information Engineer/Internet Social Scientist
-Menu
 
 ## License
 
