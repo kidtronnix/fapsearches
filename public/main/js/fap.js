@@ -30,9 +30,11 @@
             // on which the widget was called via this.element.
             // The options defined above can be accessed
             // via this.options this.element.addStuff();
+            this.warning();
             this.makePie();
             this.makeHits();
             this.makeSummary();
+            
 
             var search = $('.search');
 
@@ -101,6 +103,10 @@
           $('.numResults').html($.number(items.total, 0));
           $('.perResults').html($.number(items.percent, 4));
         },
+        warning: function() {
+            $('#myModal').modal('show');
+        },
+
         //{point.percentage:.1f}
 
         // Destroy an instantiated plugin and clean up
