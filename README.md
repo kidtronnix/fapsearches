@@ -1,5 +1,17 @@
 # Fapsearches.info
 
+This tool hopes to educate people in what and how people are searching for in the porn industry, please don't use it for mindless slut shaming.
+
+## Credits
+
+[PornMD](http://www.pornmd.com) - Live Data
+
+## Contributors
+
+[Simon Maxwell-Stewart](http://smaxwellstewart.com) - Creator/Lead Developer
+[George Dallas](https://georgemdallas.wordpress.com/) - Information Engineer/Internet Social Scientist
+Menu
+
 ## License
 
 The MIT License (MIT)
