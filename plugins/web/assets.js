@@ -24,7 +24,7 @@ var assets = {
 		main: {
 			js: ['main/js/scripts.js'],
         	css: ['main/css/styles.css']
-		}  
+		}
     }
 };
 
@@ -48,10 +48,10 @@ exports.register = function (plugin, options, next) {
         // Check to see if the response is a view
         if (response.variety === 'view') {
 
-            //pagePaths._current = 
+            //pagePaths._current =
             var pathSegments = request.route.path.split('\/');
             pathSegments.shift();
-           
+
             if(pathSegments[0] == "") {
                 pagePaths._current = 'index';
             }
@@ -69,13 +69,13 @@ exports.register = function (plugin, options, next) {
                 response.source.context.assets = {};
             }
             if (pathSegments[0] == ""){
-                assets[environment].main.js.push('main/js/fap.js')
-                assets[environment].main.css.push('main/css/fap.css')
+                assets.development.main.js.push('main/js/fap.js')
+                assets.development.main.css.push('main/css/fap.css')
             }
-            response.source.context.assets = assets[environment];
+            response.source.context.assets = assets.development;
 
-            
-            
+
+
         }
         return next();
     });
