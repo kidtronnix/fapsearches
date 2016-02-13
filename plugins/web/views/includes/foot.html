@@ -1,8 +1,8 @@
 {% block foot %}
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.js"></script>
+	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.js"></script>
 	<script src="//ajax.googleapis.com/ajax/libs/jqueryui/1.11.2/jquery-ui.min.js"></script>
-	<script src="http://code.highcharts.com/highcharts.js"></script>
-	<script src="http://code.highcharts.com/modules/exporting.js"></script>
+	<script src="//code.highcharts.com/highcharts.js"></script>
+	<script src="//code.highcharts.com/modules/exporting.js"></script>
     {% for item in assets.main.js %}
     <script src="/assets/{{item}}{{version.cache}}"></script>
     {% endfor %}
