@@ -4,17 +4,20 @@
 <form class="form-horizontal" role="form" action="/" method="GET">
 	<div class="input-group">
 		<input type="text" class="form-control" name="keyword" placeholder='keyword or "a phrase"' value="{{query.keyword}}">
-	  	<div class="input-group-btn">
-	    	<button type="submit" class="btn btn-primary">Find <i class="fa fa-search"></i></button>
-	 	</div>	
+  	<div class="input-group-btn">
+    	<button type="submit" class="btn btn-primary">Find <i class="fa fa-search"></i></button>
+ 		</div>
 	</div>
 	<div class="input-group">
 		<label class="radio-inline"><input type="radio" value="all" name="segment" {% if (!query.segment) ||  (query.segment === 'all') %} checked {% endif %}>All</label>
 		<label class="radio-inline"><input type="radio" value="s" name="segment" {% if query.segment === 's' %} checked {% endif %}>Straight</label>
-		<label class="radio-inline"><input type="radio" value="g" name="segment" {% if query.segment === 'g' %} checked {% endif %}>Gay</label>  
+		<label class="radio-inline"><input type="radio" value="g" name="segment" {% if query.segment === 'g' %} checked {% endif %}>Gay</label>
 		<label class="radio-inline"><input type="radio" value="t" name="segment" {% if query.segment === 't' %} checked {% endif %}>Trans</label>
+		<label class="radio-inline"><a href="#" class="clear"><small>clear filters<small></a></label>
 	</div>
+
 </form>
+<p><a href="#" class="refresh"><small>auto refresh<small></a></p>
 
 <div class="spacing"></div>
 
@@ -42,7 +45,3 @@
 <h4>Disclaimer</h4>
 <div class="hline"></div>
 <p>This site is not responsible for any data found using the tool. Sometimes the data can be misogynistic, racist and upsetting in different ways. This tool is not meant to glorify offensive material but instead help to better understand it.</p>
-
-
-
-
