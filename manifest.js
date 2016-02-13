@@ -4,6 +4,7 @@ var criteria = {
     env: process.env.NODE_ENV
 };
 
+console.log(config.get('/port/web'));
 
 var manifest = {
     $meta: 'This file defines the plot device.',
@@ -29,7 +30,7 @@ var manifest = {
         './plugins/web/assets': {},
         './plugins/web/missing': {},
         './plugins/web/index': {}
-        
+
 
     }
 };
