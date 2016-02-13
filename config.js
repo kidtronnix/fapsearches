@@ -3,6 +3,8 @@ var criteria = {
     env: process.env.NODE_ENV
 };
 
+console.log(process.env.PORT);
+
 
 var config = {
     $meta: 'This file configures the plot device.',
@@ -11,6 +13,7 @@ var config = {
         web: {
             $filter: 'env',
             test: 9000,
+            production: process.env.PORT,
             $default: process.env.PORT
         }
     },
