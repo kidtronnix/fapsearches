@@ -9,7 +9,7 @@ console.log(config.get('/port/web'));
 var manifest = {
     $meta: 'This file defines the plot device.',
     servers: [{
-        host: '127.0.0.1',
+        host: '0.0.0.0',
         port: config.get('/port/web'),
         options: {
             security: true,

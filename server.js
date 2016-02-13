@@ -9,6 +9,7 @@ composer(function (err, pack) {
 
     pack.start(function () {
 
-        console.log('Started the plot device.');
+
+        console.log('Started the plot device:', pack.servers[0].info.uri);
     });
 });
